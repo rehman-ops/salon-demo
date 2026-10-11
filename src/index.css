@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-ivory: #F8F5EF;
+    --color-champagne: #E8DCCB;
+    --color-gold: #B79A68;
+    --color-gold-light: #D4BE98;
+    --color-espresso: #30231F;
+    --color-taupe: #9A8878;
+    --color-rose: #C9A6A0;
+    --color-white: #FFFFFF;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: var(--color-ivory);
+    color: var(--color-espresso);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Custom editorial styling */
+.font-editorial {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+}
+
+/* Subtle hairline gold border */
+.border-gold-hairline {
+  border-color: rgba(183, 154, 104, 0.25);
+}
+
+.border-espresso-hairline {
+  border-color: rgba(48, 35, 31, 0.12);
+}
+
+/* Luxury button styling */
+.btn-gold {
+  background-color: #B79A68;
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+  background-color: #A38555;
+  box-shadow: 0 4px 20px -2px rgba(183, 154, 104, 0.25);
+}
+
+.btn-outline-gold {
+  border: 1px solid #B79A68;
+  color: #30231F;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-gold:hover {
+  background-color: #B79A68;
+  color: #FFFFFF;
+}
+
+/* Hide scrollbar for category tabs */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
